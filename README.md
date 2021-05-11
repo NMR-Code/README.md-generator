@@ -1,7 +1,7 @@
-# **Professional README.md Generator**
+# Professional README.md Generator
     ## Licensing:
 
-    [![license](https://img.shields.io/badge/license-undefined-blue)](https://shields.io)
+    [![license](https://img.shields.io/badge/license--blue)](https://shields.io)
     ## Table of Contents 
     - [Description](#description)
 
@@ -16,22 +16,22 @@
     - [Additional Info](#additional-info)
 
     ## Description:
-    This project was made  in an  effort to quickly generate README files that use a consistent format.
+    This project was made in an effort to quickly generate README files that use a consistent format.
 
     ## Installation:
-    undefined
+    Download it through GitHub
 
     ## Usage:
-    true
+    Run 'node index.js' in the command line.
 
     ## License:
-    undefined
+    
 
     ## Contribution:
-    undefined
+    Adding more useful features
 
     ## Testing:
-    true
+    undefined
 
     ## Additional Info:
     - Github: [NMR-Code](https://github.com/NMR-Code)

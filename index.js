@@ -31,103 +31,125 @@ Your README Generated! It's in the "generatedReadMe" folder
 `);
 
 //Questions for README
-const questions = [{
+const questions = [
+    // Project name
+    {
         type: 'input',
         name: 'title',
-        message: `Project Title?`,
+        message: 'What is the title of the project? (Req)',
+        validate: titleInput => {
+            if (titleInput) {
+                return true;
+            } else {
+                console.log('You need to enter a title to continue!');
+                return false;
+            }
+        }
     },
-    {
-        type: 'input',
-        name: 'github',
-        message: `Input GitHub username:`,
-
-    },
-    {
-        type: "input",
-        name: "email",
-        message: "Please enter your email: "
-    },
+    // Description
     {
         type: 'input',
         name: 'description',
-        message: `Write a description of your project`,
-
-    },
-    {
-        type: 'confirm',
-        name: 'install',
-        message: `Do you want to add any installation notes?`,
-
-    },
-    {
-        type: 'input',
-        name: 'installNotes',
-        message: `Please add your installation notes`,
-        when: function(data) {
-            return data.installation;
+        message: 'Provide a description of the project (Req)',
+        validate: descriptionInput => {
+            if (descriptionInput) {
+                return true;
+            } else {
+                console.log('You need to provide a project description!');
+                return false;
+            }
         }
     },
+    // Installation
     {
-        type: 'confirm',
+        type: 'input',
+        name: 'installation',
+        message: 'How do you install your project? (Req)',
+        validate: installationInput => {
+            if (installationInput) {
+                return true;
+            } else {
+                console.log('You need to provide installation info!');
+                return false;
+            }
+        }
+    },
+    // Usage Info
+    {
+        type: 'input',
         name: 'usage',
-        message: `Do you want to provide the user usage information?`,
-    },
-    {
-        type: 'input',
-        name: 'usageInfo',
-        message: `Please add your usage info`,
-        when: function(data) {
-            return data.usage;
+        message: 'How do you run this project? (Req)',
+        validate: usageInput => {
+            if (usageInput) {
+                return true;
+            } else {
+                console.log('You must provide information on how to use the program!');
+                return false;
+            }
         }
     },
     {
-        type: 'confirm',
-        name: 'contributions',
-        message: `Do you want to add any notes on contributing to the repo?`,
-    },
-    {
         type: 'input',
-        name: 'contributorNotes',
-        message: `Please add information about contributions:`,
-        when: function(data) {
-            return data.contribution;
+        name: 'contribution',
+        message: 'How can people contribute to this project? (Req)',
+        validate: contributionInput => {
+            if (contributionInput) {
+                return true;
+            } else {
+                console.log('You need to provide information on how to contribute to the project!');
+                return false;
+            }
         }
     },
     {
-        type: 'confirm',
-        name: 'test',
-        message: `Do you want to add instructions for running tests?`,
-    },
-    {
         type: 'input',
-        name: 'testNotes',
-        message: `Please add your instructions for running tests`,
-        when: function(data) {
-            return data.test;
+        name: 'testing',
+        message: 'How do you test this project? (Req)',
+        validate: testingInput => {
+            if (testingInput) {
+                return true;
+            } else {
+                console.log('You need to describe how to test this project!');
+                return false;
+            }
         }
     },
+    // Licensing
     {
-        type: 'rawlist',
-        name: 'license',
-        message: 'Which open source license would you like to use? ',
-        choices: ['Apache 2.0', 'BSD 2-Clause', 'BSD 3-Clause', 'GNU AGPLv3.0', 'GNU GPLv2.0', 'GNU GPLv3.0', 'MIT', 'Mozilla Public 2.0'],
-    },
-    {
-        type: 'confirm',
-        name: 'credits',
-        message: `Would you like to add any credits to the repo?`,
-    },
-    {
-        type: 'input',
-        name: 'creditData',
-        message: `Please add your credits`,
-        when: function(data) {
-            return data.credits;
+        type: 'checkbox',
+        name: 'licensing',
+        message: 'Choose a license for your project (Req)',
+        choices: ['Apache', 'MIT', 'Mozilla-Public', 'GNU-General-Public', 'Common-Development-and Distribution', 'None'],
+        validate: licensingInput => {
+            if (licensingInput) {
+                return true;
+            } else {
+                console.log('You must pick a license for the project!');
+                return false;
+            }
         }
     },
-
+    // Github
+    {
+        type: 'input',
+        name: 'github',
+        message: 'GitHub Username (Req)',
+        validate: githubInput => {
+            if (githubInput) {
+                return true;
+            } else {
+                console.log('Please enter your GitHub username!');
+                return false;
+            }
+        }
+    },
+    // Email
+    {
+        type: 'input',
+        name: 'email',
+        message: 'Email address?',
+    },
 ];
-
 
 //Function to write README file
 function writeToFile(fileName, data) {
