@@ -1,4 +1,4 @@
-# Professional README Generator
+# **Professional README.md Generator**
     ## Licensing:
 
     [![license](https://img.shields.io/badge/license-undefined-blue)](https://shields.io)
@@ -31,8 +31,8 @@
     undefined
 
     ## Testing:
-    undefined
-    
+    true
+
     ## Additional Info:
     - Github: [NMR-Code](https://github.com/NMR-Code)
     - Email: nelsonog827@gmail.com 

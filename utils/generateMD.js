@@ -33,8 +33,8 @@ function generateMD(data) {
     ${data.contribution}
 
     ## Testing:
-    ${data.testing}
-    
+    ${data.test}
+
     ## Additional Info:
     - Github: [${data.github}](https://github.com/${data.github})
     - Email: ${data.email} `;

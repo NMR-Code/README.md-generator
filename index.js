@@ -63,8 +63,8 @@ const questions = [{
         type: 'input',
         name: 'installNotes',
         message: `Please add your installation notes`,
-        when: function(answers) {
-            return answers.install;
+        when: function(data) {
+            return data.installation;
         }
     },
     {
@@ -76,8 +76,8 @@ const questions = [{
         type: 'input',
         name: 'usageInfo',
         message: `Please add your usage info`,
-        when: function(answers) {
-            return answers.usage;
+        when: function(data) {
+            return data.usage;
         }
     },
     {
@@ -89,8 +89,8 @@ const questions = [{
         type: 'input',
         name: 'contributorNotes',
         message: `Please add information about contributions:`,
-        when: function(answers) {
-            return answers.contrib;
+        when: function(data) {
+            return data.contribution;
         }
     },
     {
@@ -102,8 +102,8 @@ const questions = [{
         type: 'input',
         name: 'testNotes',
         message: `Please add your instructions for running tests`,
-        when: function(answers) {
-            return answers.test;
+        when: function(data) {
+            return data.test;
         }
     },
     {
@@ -121,8 +121,8 @@ const questions = [{
         type: 'input',
         name: 'creditData',
         message: `Please add your credits`,
-        when: function(answers) {
-            return answers.credits;
+        when: function(data) {
+            return data.credits;
         }
     },
 
