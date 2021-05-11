@@ -1,14 +1,23 @@
 {
-    "name": "static-site",
-    "version": "1.0.0",
-    "description": "",
-    "main": "index.js",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "author": "Nelson Rosado",
-    "license": "ISC",
-    "dependencies": {
-        "inquirer": "^6.5.2"
-    }
+  "name": "static-site",
+  "version": "1.0.0",
+  "description": "[![license](https://img.shields.io/badge/license-undefined-blue)](https://shields.io)     ## Table of Contents      - [Description](#description)     - [Installation](#installation)     - [Usage](#usage)     - [Contribution](#contribution)     - [Testing](#testing)     - [Additional Info](#additional-info)     ## Description:     y     ## Installation:     undefined     ## Usage:     false     ## License:     undefined     ## Contribution:     undefined     ## Testing:     undefined     ## Additional Info:     - Github: [y](https://github.com/y)     - Email: y",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nelson Rosado",
+  "license": "ISC",
+  "dependencies": {
+    "inquirer": "^6.5.2"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NMR-Code/README.md-generator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/NMR-Code/README.md-generator/issues"
+  },
+  "homepage": "https://github.com/NMR-Code/README.md-generator#readme"
 }

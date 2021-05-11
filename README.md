@@ -1,4 +1,4 @@
-# y
+# Professional README Generator
     ## Licensing:
     [![license](https://img.shields.io/badge/license-undefined-blue)](https://shields.io)
     ## Table of Contents 
@@ -9,7 +9,7 @@
     - [Testing](#testing)
     - [Additional Info](#additional-info)
     ## Description:
-    y
+    This project was created in an effort to generate consistent README files for future projects.
     ## Installation:
     undefined
     ## Usage:
@@ -21,5 +21,5 @@
     ## Testing:
     undefined
     ## Additional Info:
-    - Github: [y](https://github.com/y)
-    - Email: y 
+    - Github: [NMR-Code](https://github.com/NMR-Code)
+    - Email: nelsonog827@gmail.com 
