@@ -1,8 +1,8 @@
 # Professional README.md Generator
-    ## Licensing:
+    ## Licensing ##:
 
     [![license](https://img.shields.io/badge/license--blue)](https://shields.io)
-    ## Table of Contents 
+    ## Table of Contents ##
     - [Description](#description)
 
     - [Installation](#installation)
@@ -15,7 +15,7 @@
 
     - [Additional Info](#additional-info)
 
-    ## Description:
+    ## Description##:
     This project was made in an effort to quickly generate README files that use a consistent format.
 
     ## Installation:
