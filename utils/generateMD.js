@@ -1,5 +1,5 @@
 // Markdown for README
-function generateMD(data) {
+function generateMd(data) {
     return `# ${data.title}
 ![video](demo.gif)
 ## Licensing: [![license](https://img.shields.io/badge/license-${data.licensing}-blue)](https://shields.io)
@@ -36,4 +36,4 @@ ${data.test}
 - Email: ${data.email} `;
 }
 
-export default generateMD;
+module.exports = generateMd;

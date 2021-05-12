@@ -1,7 +1,7 @@
 const fs = require('fs');
 const chalk = require('chalk');
 const inquirer = require('inquirer');
-const generateMD = require("./utils/generateMD")
+const generateMd = require("./utils/generateMd")
 
 // Welcome message
 const welcome = [{
@@ -166,7 +166,7 @@ const init = async() => {
         await inquirer.prompt(welcome);
         console.log(startText);
         const data = await inquirer.prompt(questions);
-        writeToFile('README.md', generateMD(data));
+        writeToFile('README.md', generateMd(data));
     } catch (err) {
         console.log(err);
     }
