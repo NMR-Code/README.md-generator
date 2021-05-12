@@ -1,43 +1,39 @@
-// function to generate markdown for README
+// Markdown for README
 function generateMD(data) {
     return `# ${data.title}
-    ## Licensing:
+![video](demo.gif)
+## Licensing: [![license](https://img.shields.io/badge/license-${data.licensing}-blue)](https://shields.io)
+    
+## Table of Contents 
+    
+- [Description](#description)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contribution](#contribution)
+- [Testing](#testing)
+- [Additional Info](#additional-info)
 
-    [![license](https://img.shields.io/badge/license-${data.licensing}-blue)](https://shields.io)
-    ## Table of Contents 
-    - [Description](#description)
+## Description:
+${data.description}
 
-    - [Installation](#installation)
+## Installation:
+${data.installation}
 
-    - [Usage](#usage)
+## Usage:
+${data.usage}
 
-    - [Contribution](#contribution)
+## License:
+${data.licensing}
 
-    - [Testing](#testing)
+## Contribution:
+${data.contribution}
 
-    - [Additional Info](#additional-info)
+## Testing:
+${data.test}
 
-    ## Description:
-    ${data.description}
-
-    ## Installation:
-    ${data.installation}
-
-    ## Usage:
-    ${data.usage}
-
-    ## License:
-    ${data.licensing}
-
-    ## Contribution:
-    ${data.contribution}
-
-    ## Testing:
-    ${data.test}
-
-    ## Additional Info:
-    - Github: [${data.github}](https://github.com/${data.github})
-    - Email: ${data.email} `;
+## Additional Info:
+- Github: [${data.github}](https://github.com/${data.github})
+- Email: ${data.email} `;
 }
 
-module.exports = generateMD;
+export default generateMD;
